@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,501,700,701,900,1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sellers_dash_settings</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <div class="logo">MONDAY</div>
+        <div class="location-button">
+          <img src="images/global.png" alt="" class="global" />
+          <select id="1" class="location-button">
+            <option value="lg">UZ</option>
+            <option value="lg">RU</option>
+            <option value="lg">EN</option>
+
+            <img src="images/expand.png" alt="" class="expand" />
+            <!-- Добавьте другие временные зоны по необходимости -->
+          </select>
+        </div>
+
+        <div class="search">
+          <input
+            type="search"
+            placeholder="Search for services..."
+            class="search-bar"
+          />
+          <img src="/src/images/search.png" alt="Search" class="search-icon" />
+        </div>
+      </div>
+      <div class="header-center">
+        <div class="nav-item">Orders</div>
+        <div class="nav-item">Projects</div>
+        <div class="nav-item">Sellers</div>
+        <div class="nav-item">
+          <img src="images/lovely.png" alt="Favorite" class="lovely-icon" />
+          Favorites
+        </div>
+      </div>
+      <div class="header-right">
+        <img src="/src/images/cart.png" alt="Icon 1" class="icon" />
+        <img src="/src/images/message.png" alt="Icon 2" class="icon" />
+        <img src="/src/images/notification.png" alt="Icon 3" class="icon" />
+
+        <div class="profile">
+          <img src="/src/images/wallet.png" alt="" class="wallet" />
+          <img src="/src/images/profile.png" alt="" class="profile-icon" />
+          <img src="/src/images/expand.png" alt="" class="dropdown-icon" />
+        </div>
+      </div>
+    </header>
+    <nav class="tabs">
+      <div class="tab active">Social & SMM</div>
+      <div class="tab">SEO</div>
+      <div class="tab">Copywriting</div>
+      <div class="tab">Web Development</div>
+      <div class="tab">Scripts & Telegram Bots</div>
+      <div class="tab">Logotypes & Branding</div>
+      <div class="tab">Web & Mobile Design</div>
+      <div class="tab">Scripts & Bots</div>
+
+      <div class="tab2">
+        <img src="/src/images/Line 13.png" class="line" />All Services<img
+          src="/src/images/expand.png"
+          class="arrow"
+        />
+      </div>
+    </nav>
+    <section class="sidebar">
+      <div class="sidebar-header">SETTINGS</div>
+      <div class="sidebar-item">
+        <img src="/src/images/setting-2.png" class="setting" /><span
+          >Main settings</span
+        >
+        <img src="/src/images/expand2.png" class="arrow-reverse" />
+      </div>
+      <div class="sidebar-item profile-payment">
+        <img src="/src/images/user.png" class="profile-img" />
+        <span>Profile</span>
+      </div>
+      <div class="sidebar-item profile-payment">
+        <img src="/src/images/empty-wallet.png" />
+        <span>Payment</span>
+      </div>
+      <img src="/src/images/branch.png" alt="" class="branch" />
+      <button class="back-button">
+        <img src="/src/images/left_right.png" class="reverse" />Back
+      </button>
+    </section>
+    <div class="header-container">
+      <h2 class="h1">Main Settings</h2>
+    </div>
+    <main class="main-content">
+      <div class="form-block">
+        <div class="left-part">
+          <div class="personal-data-container">
+            <img src="/src/images/home-2.png" />
+            <span class="personal-data">Personal data</span>
+          </div>
+          <div class="profile-link-container">
+            <span>Address of your profile public page:</span>
+            <div class="rounded-block">
+              <a href="#">https://kwork.ru/user/jamesk</a>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <label for="login" class="input-label">Login</label>
+          <input
+            id="login"
+            type="text"
+            class="input-field"
+            placeholder="James_K"
+          />
+
+          <!-- Поле ввода для Email -->
+          <label for="email" class="input-label">Email</label>
+          <div class="input-group">
+            <div class="input-icon">
+              <img src="/src/images/email.png" alt="Email icon" />
+              <input
+                id="email"
+                type="email"
+                class="input-field-half"
+                placeholder="   james_k@gmail.me"
+              />
+            </div>
+            <div class="input-icon">
+              <img src="/src/images/telephone.png" alt="Phone icon" />
+              <input
+                id="phone"
+                type="tel"
+                class="input-field-half"
+                placeholder="+9****64****"
+              />
+            </div>
+          </div>
+
+          <!-- Поле выбора Timezone -->
+          <label for="timezone" class="input-label">Timezone</label>
+          <div class="input-select">
+            <select id="timezone" class="input-field">
+              <option value="UTC">(GMT + 05:00) Asia / Tashkent</option>
+              <!-- Добавьте другие временные зоны по необходимости -->
+            </select>
+            <img
+              src="/src/images/expand.png"
+              alt="Dropdown arrow"
+              class="dropdown-icon"
+            />
+          </div>
+
+          <!-- Кнопки -->
+          <div class="button-group">
+            <button class="save-button">
+              <img src="/src/images/setting.png" alt="Settings icon" />
+              Save Changes
+            </button>
+            <button class="delete-button">
+              Delete Account
+              <img src="/src/images/trash.png" alt="Delete icon" />
+            </button>
+          </div>
+        </div>
+        <div class="right-part">
+          <div class="icon-title-container">
+            <img
+              src="/src/images/security-safe.png"
+              alt="Lock icon"
+              class="lock-icon"
+            />
+            <span class="change-password-title">Change Password</span>
+          </div>
+          <div class="right-separator"></div>
+
+          <div class="input-icon2">
+            <img
+              src="/src/images/eye.png"
+              alt="Show password"
+              class="input-icon-img"
+            />
+            <input
+              id="new-password"
+              type="password"
+              class="input-field"
+              placeholder="Type new password"
+            />
+          </div>
+          <div class="input-icon2">
+            <input
+              id="confirm-password"
+              type="password"
+              class="input-field"
+              placeholder="Repeat new password"
+            />
+            <img
+              src="/src/images/eye.png"
+              alt="Show password"
+              class="input-icon-img"
+            />
+          </div>
+          <button class="save-password-button">
+            <img
+              src="/src/images/setting.png"
+              alt="Check icon"
+              class="button-icon"
+            />
+            Save New Password
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-column">
+        <h4 class="footer-title">About Monday</h4>
+        <p class="footer-text">About the project</p>
+        <p class="footer-text">Agency contract</p>
+        <p class="footer-text">Privacy Policy</p>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">Help</h4>
+        <p class="footer-text">Service rules</p>
+        <p class="footer-text">Question answer</p>
+        <p class="footer-text">Support</p>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">Useful</h4>
+        <p class="footer-text">For customers</p>
+        <p class="footer-text">For performers</p>
+        <p class="footer-text">
+          PRO account <img src="/src/images/chip.png" />
+        </p>
+      </div>
+      <div class="footer-column">
+        <h4 class="footer-title">Community</h4>
+        <p class="footer-text">Blog Monday</p>
+        <p class="footer-text">Affiliate program</p>
+        <p class="footer-text">
+          Verification <img src="/src/images/checked.png" />
+        </p>
+        <div class="footer-buttons">
+          <button class="footer-button1">Sign In</button>
+          <div></div>
+          <button class="footer-button2">
+            Join
+            <img
+              src="/src/images/Frame.png"
+              alt="Join icon"
+              class="footer-button-icon"
+            />
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

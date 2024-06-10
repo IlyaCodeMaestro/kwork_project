@@ -1,0 +1,582 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Satoshi", sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffff;
+  width: auto;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-weight: 700;
+  font-size: large;
+  margin-right: 10px;
+}
+.location-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 10px;
+  padding: 5px 10px;
+  width: 83px;
+  height: 45px;
+  border: 1px rgb(97, 99, 104);
+  border-radius: 12px;
+  color: #ddd;
+  cursor: pointer;
+  background-color: rgba(250, 250, 252, 1);
+}
+
+.location-button .global {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.location-button .title1,
+.location-button .expand {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 2px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.search input {
+  width: 316px;
+  height: 45px;
+  border-radius: 100px;
+  color: rgba(156, 165, 179, 1);
+  border: rgba(156, 165, 179, 1);
+}
+.search .search-icon {
+  position: absolute;
+  right: 15px;
+  height: 20px;
+  cursor: pointer;
+}
+.search-bar {
+  background-color: rgba(250, 250, 252, 1);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; /* Учитывает padding и border в общую ширину и высоту */
+  border: 1px solid rgba(156, 165, 179, 1);
+  font-size: 16px; /* Размер шрифта */
+  padding: 0 40px 0 10px;
+  border-radius: 100px; /* Отступ, чтобы текст не накладывался на иконку */
+}
+.header-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 15px;
+  margin-left: 220px;
+}
+.nav-item {
+  margin: 0 10px;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(156, 165, 179, 1);
+}
+.lovely-icon {
+  margin-bottom: -3px;
+}
+.header-right {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 5px;
+}
+.icon {
+  height: 30px;
+  cursor: pointer;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.profile .profile-icon {
+  margin-right: 5px;
+  height: 50px;
+}
+.profile .dropdown-icon {
+  height: 26px;
+}
+.wallet {
+  margin-bottom: 20px;
+}
+.tabs {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  gap: 23px;
+  padding: 1px 0;
+  border-bottom: 1px solid rgba(156, 165, 179, 1);
+}
+.tab {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: rgba(156, 165, 179, 1);
+  cursor: pointer;
+  position: relative;
+  font-weight: 400;
+}
+.tab.active {
+  color: #000;
+  font-weight: 600;
+}
+
+.tab:hover::after,
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: 0.8s;
+}
+.tab2 {
+  color: rgba(156, 165, 179, 1);
+}
+.line {
+  vertical-align: middle;
+  height: 30px;
+  margin: 5px 5px;
+}
+.arrow {
+  vertical-align: middle;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.main-section {
+  display: flex;
+  width: auto;
+}
+
+.sidebar {
+  font-family: "Arial", sans-serif;
+  color: #000;
+  background-color: #fff;
+  height: 540px;
+  width: 340px;
+  border-radius: 12px;
+  padding: 20px;
+  position: relative;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.sidebar-header {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  height: 45px;
+  background-color: rgba(250, 250, 252, 1);
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-top: 13px;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 45px;
+  font-size: 18px;
+  white-space: nowrap;
+  font-weight: bold;
+  background-color: rgba(250, 250, 252, 1);
+  height: 45px;
+  border-radius: 12px;
+}
+.sidebar-item img {
+  margin-right: 15px;
+}
+.sidebar-item :nth-child(1) {
+  padding-left: 5px;
+  padding-bottom: 2px;
+}
+.sidebar-item :nth-child(3) {
+  padding-left: 70px;
+  cursor: pointer;
+}
+
+.back-button {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  height: 50px;
+  width: 300px;
+  margin-left: 15px;
+  border-radius: 12px;
+  border: 1px solid gray;
+  background-color: #fff;
+  cursor: pointer;
+}
+.branch {
+  position: absolute;
+  left: 45px;
+  top: 70px;
+  color: rgba(242, 242, 242, 1);
+}
+.reverse {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
+
+.header-container {
+  margin-left: 420px; /* Синхронизируем с основным содержимым */
+  margin-bottom: 10px; /* Отступ снизу, чтобы не прилегал к main-content */
+}
+
+h2 {
+  font-size: 28px;
+  position: absolute;
+  top: 145px;
+  right: 1000px;
+}
+
+.main-content {
+  padding: 10px;
+  margin-left: 380px;
+  width: 1150px;
+  background-color: rgba(241, 243, 249, 1);
+  border-radius: 24px;
+  height: 470px;
+  position: relative;
+  z-index: 1;
+  margin-top: -480px;
+}
+
+.form-block {
+  width: 750px;
+  height: 427px;
+  display: flex;
+  border: none;
+  border-radius: 24px;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  background-color: white;
+  padding: 20px;
+}
+.separator {
+  width: 100%; /* Ширина 80% от ширины левого блока */
+  border-bottom: 1px solid rgba(242, 242, 242, 1); /* Стиль линии */
+  margin: 20px 0; /* Отступ сверху и снизу */
+  align-self: center; /* Центрируем линию */
+}
+
+.left-part {
+  display: flex;
+  flex-direction: column; /* Размещаем элементы по вертикали */
+  width: 100%; /* Занимаем всю ширину */
+}
+.personal-data-container {
+  display: flex;
+  align-items: center; /* Центрируем иконку и текст */
+  margin-bottom: 20px; /* Отступ снизу для разделения от остального текста */
+}
+.personal-data-container img {
+  margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+.personal-data {
+  font-weight: bold;
+  font-size: 24px; /* Жирный шрифт */
+  color: black; /* Черный цвет */
+}
+.profile-link-container {
+  display: flex;
+  justify-content: flex-end; /* Выровняем по правому краю */
+  gap: 15px; /* Добавляем отступ между текстом и ссылкой */
+  align-items: center;
+  margin-top: -60px;
+  margin-right: -10px; /* Центрируем по вертикали */
+}
+
+.profile-link-container span {
+  white-space: nowrap;
+  margin-right: -12px;
+  margin-top: 7px;
+  font-size: 15px;
+  color: #575e6a;
+  font-weight: 400; /* Предотвращаем перенос на следующую строку */
+}
+.rounded-block {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 10px 12px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+.input-label {
+  font-weight: bold;
+  margin-bottom: 2px; /* Отступ снизу */
+  color: #575e6a;
+}
+
+.input-field {
+  width: 100%; /* Ширина как у линии-разделителя */
+  height: 50px; /* Высота 50px */
+  padding-left: 10px; /* Внутренний отступ слева */
+  margin-bottom: 5px; /* Отступ снизу */
+  border: none;
+  background-color: rgba(250, 250, 252, 1);
+  border-radius: 12px;
+  box-sizing: border-box; /* Учитываем padding в ширину */
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 1%;
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.input-icon {
+  position: relative; /* Для позиционирования иконки */
+  width: 50%;
+  /* Занимает 48% ширины верхнего инпута */
+}
+
+.input-icon img {
+  position: absolute;
+  left: 10px; /* Позиционируем иконку внутри инпута */
+  top: 50%;
+  transform: translateY(-50%); /* Центрируем по вертикали */
+  pointer-events: none; /* Иконка не мешает вводу текста */
+}
+
+.input-icon input {
+  width: 100%; /* Полная ширина родительского контейнера */
+  height: 50px; /* Высота как у верхнего инпута */
+  padding-left: 35px; /* Отступ для иконки */
+  border: none;
+  background-color: rgba(250, 250, 252, 1);
+  border-radius: 4px;
+  border-radius: 12px;
+  box-sizing: border-box; /* Учитываем padding в ширину */
+}
+
+.input-select {
+  position: relative; /* Для позиционирования иконки */
+  width: 100%; /* Ширина как у верхнего инпута */
+  height: 50px; /* Высота как у верхнего инпута */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.input-select select {
+  width: 100%; /* Полная ширина родительского контейнера */
+  height: 100%; /* Полная высота родительского контейнера */
+  padding-right: 30px; /* Оставляем место для иконки */
+  border: none;
+  background-color: rgba(250, 250, 252, 1);
+  border-radius: 12px;
+  box-sizing: border-box; /* Учитываем padding в ширину */
+  appearance: none; /* Убираем стандартный стиль браузера */
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 10px; /* Позиционируем иконку */
+  top: 50%;
+  transform: translateY(-50%); /* Центрируем по вертикали */
+  pointer-events: none; /* Иконка не мешает взаимодействию с полем */
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Пространство между кнопками */
+  margin-top: 5px; /* Отступ сверху */
+}
+
+.save-button,
+.delete-button {
+  display: flex;
+  align-items: center;
+  padding: 12px 32px; /* Внутренние отступы кнопки */
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.save-button {
+  background-color: rgba(237, 244, 255, 1);
+  color: rgba(71, 144, 255, 1);
+  border: none;
+}
+
+.save-button img {
+  margin-right: 10px; /* Отступ между иконкой и текстом */
+}
+
+.delete-button {
+  background: none;
+  color: #ff8e8e;
+  border: none;
+}
+
+.delete-button img {
+  margin-left: 10px; /* Отступ между текстом и иконкой */
+}
+
+.right-part {
+  width: 360px;
+  height: 265px;
+  border: 1px solid;
+  position: absolute;
+  left: 760px;
+  border-radius: 24px;
+  border: none;
+  background-color: white;
+  top: 0; /* Изменяем положение в соответствии с top в .form-block */
+  padding: 20px;
+}
+
+.icon-title-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.lock-icon {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px; /* Отступ между иконкой и текстом */
+}
+
+.change-password-title {
+  font-weight: bold;
+  color: black;
+  font-size: 24px;
+}
+
+.right-separator {
+  width: 100%;
+  border-bottom: 1px solid rgba(242, 242, 242, 1);
+  margin: 5px 0 10px; /* Отступ сверху и снизу */
+  align-self: center; /* Центрируем линию */
+}
+
+.input-icon2 {
+  position: relative;
+  width: 100%; /* Полная ширина */
+  margin-bottom: 10px; /* Отступ снизу */
+}
+
+.input-icon2 input {
+  width: 100%; /* Полная ширина */
+  height: 50px; /* Высота 50px */
+  padding-right: 40px; /* Оставляем место для иконки */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: rgba(250, 250, 252, 1);
+  box-sizing: border-box; /* Учитываем padding в ширину */
+}
+
+.input-icon-img {
+  position: absolute;
+  right: 10px; /* Отступ от правого края */
+  top: 50%;
+  transform: translateY(-50%); /* Центрируем по вертикали */
+  pointer-events: none; /* Иконка не мешает вводу текста */
+}
+
+.save-password-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 74px; /* Внутренние отступы кнопки */
+  background-color: #edf4ff;
+  color: #4790ff;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  gap: 4px;
+}
+
+.save-password-button .button-icon {
+  margin-left: 5px; /* Отступ между текстом и иконкой */
+}
+
+.footer {
+  width: 1530px;
+  height: 550px;
+  margin-top: 50px;
+  background-color: rgba(32, 32, 32, 1);
+  padding: 200px 120px; /* Отступ сверху и снизу 200px, слева и справа 100px */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-column {
+  width: calc(
+    25% - 150px
+  ); /* Ширина колонны (25% ширины - 3*200px отступы между колоннами) */
+}
+
+.footer-title {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.footer-text {
+  color: rgba(142, 142, 142, 1);
+  margin-bottom: 10px;
+}
+.footer-text img {
+  vertical-align: middle;
+}
+
+.footer-button1 {
+  border: 1px solid rgba(156, 165, 179, 1);
+  background-color: transparent;
+  color: rgba(156, 165, 179, 1);
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 130px;
+  height: 45px;
+}
+.footer-button2 {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 130px;
+  height: 45px;
+}
+
+.footer-button-icon {
+  margin-left: 5px;
+  width: 14px;
+}
+.footer-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: -150px;
+}
+.footer-buttons > div {
+  margin-left: 20px;
+}
